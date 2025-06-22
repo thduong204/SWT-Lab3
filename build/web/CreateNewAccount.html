@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create new account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                width: 350px;
+                text-align: center;
+            }
+            h2 {
+                color: #4a0614;
+                margin-bottom: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            label {
+                display: block;
+                text-align: left;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            input[type="submit"], input[type="reset"] {
+                width: 100%;
+                padding: 12px;
+                margin-top: 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"] {
+                background-color: #4a0614;
+                color: white;
+            }
+            input[type="submit"]:hover {
+                background-color: #6a0c1e;
+            }
+            input[type="reset"] {
+                background-color: #800000;
+                color: white;
+            }
+            input[type="reset"]:hover {
+                background-color: #a52a2a;
+            }
+            .note {
+                font-size: 12px;
+                color: gray;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Create New Account</h2>
+            <form action="MainController">
+                <label>Username(*)</label>
+                <input type="text" name="txtUsername" placeholder="6 - 15 characters" required>
+                
+                <label>Password(*)</label>
+                <input type="password" name="txtPassword" placeholder="6 - 20 characters" required>
+                
+                <label>Confirm Password(*)</label>
+                <input type="password" name="txtConfirm" required>
+                
+                <label>Full Name(*)</label>
+                <input type="text" name="txtFullname" placeholder="6 - 50 characters" required>
+                
+                <input type="submit" value="Create New Account" name="btAction">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>

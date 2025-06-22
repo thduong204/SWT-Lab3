@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .login-container {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                width: 300px;
+            }
+            h2 {
+                color: #4a0614;
+            }
+            .input-group {
+                margin: 10px 0;
+                text-align: left;
+            }
+            .input-group label {
+                font-weight: bold;
+            }
+            .input-group input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .btn {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4a0614;
+                color: white;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .btn:hover {
+                background-color: #3a0510;
+            }
+            .link {
+                margin-top: 10px;
+                display: block;
+                color: #4a0614;
+                text-decoration: none;
+            }
+            .link:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Login Page</h2>
+            <form action="MainController" method="post">
+                <div class="input-group">
+                    <label for="txtUsername">Username:</label>
+                    <input type="text" id="txtUsername" name="txtUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="txtPassword">Password:</label>
+                    <input type="password" id="txtPassword" name="txtPassword" required>
+                </div>
+                <input type="submit" value="Login" name="btAction" />
+            <input type="reset" value="Reset" /><br>
+            </form>
+            <a href="CreateNewAccount.html" class="link">Click here to create a new account</a>
+        </div>
+    </body>
+</html>
